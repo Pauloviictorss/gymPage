@@ -65,30 +65,6 @@ main {
     justify-content: space-between;
 }
 
-main section button img {
-    width: 2.5em;
-}
-
-main section button {
-    margin-top: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FF9900;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1em;
-    width: 13em;
-    transition: ease-in-out 300ms;
-}
-
-main section button:hover {
-    background-color: #181818;
-    transition: ease-in-out 300ms;
-    cursor: pointer;
-}
-
 #treino {
     width: 500px;
 }
@@ -108,11 +84,6 @@ main section button:hover {
 .text p {
     font-size: 1em;
     line-height: 2em;
-}
-
-button {
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
 }
 
 footer p {
