@@ -9,17 +9,21 @@ body {
     background-color: #ededed;
 }
 
-.page {
+#head {
+    height: 50px;
+    padding: 3em 3em 0.5em;
+    margin: 5vh auto 1em;
+}
+
+.container {
     max-width: 800px;
     min-width: 600px;
-    margin: 5vh auto;
-    background: #f1f1f1;
-    padding: 3em;
+    background-color: #f1f1f1;
     border-radius: 20px;
     transition: ease-in 200ms;
 }
 
-.page:hover {
+.container:hover {
     background-color: #f9f9f9;
     transition: ease-in 200ms;
     box-shadow: rgba(18, 18, 18, 0.1) 1px 1px;
@@ -59,38 +63,49 @@ nav ul {
     padding: 0.2em;
 }
 
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#title {
+    max-width: 800px;
+    min-width: 600px;
+    margin: auto;
+    border: 1px solid #FF9900;
+    border-radius: 20px;
+    padding: 1em 3em;
 }
 
-#treino {
-    width: 500px;
-}
-
-.text h1 {
+#title header h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 3.5em;
-    line-height: 1em;
     font-weight: normal;
+    font-size: 2em;
 }
 
-.text h1 span {
+#title header h1 span {
+    font-weight: bold;
     color: #FF9900;
+}
+
+#title header p span {
     font-weight: bold;
 }
 
-.text p {
-    font-size: 1em;
-    line-height: 2em;
+#middle {
+    margin: 1em auto 0;
+    padding: 1em 3em;
 }
 
-#infos {
-    margin: auto;
-    display: flex;
-    gap: 10vw;
+#middle form fieldset {
+    border: none;
+    padding: 0;
 }
+
+#middle form fieldset legend{
+    padding: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
 
 footer p {
     font-size: 1em;
