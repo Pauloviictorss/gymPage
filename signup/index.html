@@ -31,9 +31,86 @@
         
         <form>
             <fieldset>
-                <legend>Preencha os campos a seguir:</legend>
+                <div class="fieldset-wrapper">
+                    <legend>Login e contato</legend>
+
+                    <div class="input-wrapper">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="name">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="email">E-mail <span>(exemplo@email.com)</span></label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="password">Senha <span>(mínimo 8 caracteres)</span></label>
+                        <input type="password" id="password">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="whatsapp">WhatsApp para contato <span>(somente números)</span></label>
+                        <input type="number" id="whatsapp">
+                    </div>                    
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Opções de treino</legend>
+
+                    <div class="input-wrapper">
+                        <label for="modality">Modalidade de treino</label>
+                        <select id="modality">
+                            <option value="gym">Musculação</option>
+                            <option value="swim">Natação</option>
+                            <option value="muaythai">Muay Thai</option>
+                            <option value="juijitsu">Jiu Jitsu</option>
+                            <option value="judo">Judô</option>
+                        </select>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="">Dias disponíveis na semana</label>
+                        <div>
+                            <label for="seg">Seg.</label>
+                            <input type="checkbox" name="" id="seg">
+                            <label for="ter">Ter.</label>
+                            <input type="checkbox" name="" id="ter">
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="turn">Turno preferível</label>
+                        <select id="turn">
+                            <option value="morning">Manhã</option>
+                            <option value="afternoon">Tarde</option>
+                            <option value="night">Noite</option>
+                        </select>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="age">Idade <span>(somente números)</span></label>
+                        <input type="number" id="age">
+                    </div> 
+                    
+                    <div class="input-wrapper">
+                        <label for="height">Altura <span>(em centímetros)</span></label>
+                        <input type="number" id="height">
+                    </div> 
+
+                    <div class="input-wrapper">
+                        <label for="weight">Peso <span>(em quilogramas)</span></label>
+                        <input type="number" id="weight">
+                    </div> 
+                </div>
             </fieldset>
         </form>
+
+        <div id="division"></div>
+        
+        <p>Já possui uma conta? Faça Log In <a href="">aqui</a>.</p>
     </div>
 
     <footer>
