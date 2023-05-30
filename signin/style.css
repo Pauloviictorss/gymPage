@@ -177,11 +177,6 @@ form {
     margin-top: 24px;
 }
 
-.checkbox-wrapper div {
-    display: flex;
-    justify-content: space-between;
-}
-
 .form-button {
     display: flex;
     flex-direction: column;
@@ -211,6 +206,52 @@ form {
 
 strong {
     color: red;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-container {
+    margin: 0 15px;
+}
+
+.social-media-container {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.social-media-container .icon-container {
+    display: inline-block;
+    background: #FF9900;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+    transition: ease-in 150ms;
+}
+
+.social-media-container .icon-container:hover {
+    background: #121212;
+    transition: ease-in 150ms;
+    box-shadow: rgba(18, 18, 18, 0.1) 4px 4px;
+}
+
+.social-media-container .icon-container svg {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);
+    color: #323232;
+    transition: ease-in 150ms;
+}
+
+.social-media-container .icon-container svg:hover {
+    color: #FFF;
+    cursor: pointer;
+    transition: ease-in 150ms;
 }
 
 footer {

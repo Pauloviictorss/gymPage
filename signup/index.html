@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,21 +32,21 @@
         <form>
             <fieldset>
                 <div class="fieldset-wrapper">
-                    <legend>Login e contato</legend>
+                    <legend>Dados cadastrais e contato</legend>
 
                     <div class="input-wrapper">
-                        <label for="name">Nome completo</label>
-                        <input type="text" id="name">
+                        <label for="name">Nome completo <strong>*</strong><span>(mínimo 8 caracteres)</span></label>
+                        <input type="text" id="name" required minlength="8">
                     </div>
 
                     <div class="input-wrapper">
-                        <label for="email">E-mail <span>(exemplo@email.com)</span></label>
-                        <input type="email" id="email">
+                        <label for="email">E-mail <strong>*</strong> <span>(exemplo@email.com)</span></label>
+                        <input type="email" id="email" required>
                     </div>
 
                     <div class="input-wrapper">
-                        <label for="password">Senha <span>(mínimo 8 caracteres)</span></label>
-                        <input type="password" id="password">
+                        <label for="password">Senha <strong>*</strong><span>(mínimo 8 caracteres)</span></label>
+                        <input type="password" id="password" required minlength="8">
                     </div>
 
                     <div class="input-wrapper">
@@ -72,48 +72,95 @@
                     </div>
 
                     <div class="input-wrapper">
-                        <label for="">Dias disponíveis na semana</label>
-                        <div>
-                            <label for="seg">Seg.</label>
-                            <input type="checkbox" name="" id="seg">
-                            <label for="ter">Ter.</label>
-                            <input type="checkbox" name="" id="ter">
-                        </div>
-                    </div>
-
-                    <div class="input-wrapper">
                         <label for="turn">Turno preferível</label>
                         <select id="turn">
                             <option value="morning">Manhã</option>
                             <option value="afternoon">Tarde</option>
                             <option value="night">Noite</option>
                         </select>
+                    </div> 
+
+                    <div class="checkbox-wrapper">
+                        <label for="checkbox-wrapper">Dias disponíveis na semana</label>
+                        <div>
+                            <div>
+                                <input type="checkbox" name="" id="seg">
+                                <label for="seg">Seg.</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="ter">
+                                <label for="ter">Ter.</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="qua">
+                                <label for="qua">Qua.</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="qui">
+                                <label for="qui">Qui.</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="sex">
+                                <label for="sex">Sex.</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="sab">
+                                <label for="sab">Sab.</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="dom">
+                                <label for="dom">Dom.</label>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="input-wrapper">
-                        <label for="age">Idade <span>(somente números)</span></label>
-                        <input type="number" id="age">
-                    </div> 
-                    
-                    <div class="input-wrapper">
-                        <label for="height">Altura <span>(em centímetros)</span></label>
-                        <input type="number" id="height">
-                    </div> 
-
-                    <div class="input-wrapper">
-                        <label for="weight">Peso <span>(em quilogramas)</span></label>
-                        <input type="number" id="weight">
-                    </div> 
                 </div>
             </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Histórico de atividades</legend>
+
+                    <div class="input-wrapper">
+                        <label for="activities">É uma pessoa fisicamente ativa?</label>
+                        <select id="activities">
+                            <option value="yes">Sim</option>
+                            <option value="no">Não</option>
+                        </select>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="didgym">Já frequentou alguma academia anteriormente?</label>
+                        <select id="didgym">
+                            <option value="yes">Sim</option>
+                            <option value="no">Não</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="age">Idade <strong>*</strong></label>
+                            <input type="date" id="age" required>
+                        </div> 
+                        
+                        <div class="input-wrapper">
+                            <label for="height">Altura <strong>*</strong><span>(em centímetros)</span></label>
+                            <input type="number" id="height" required>
+                        </div> 
+    
+                        <div class="input-wrapper">
+                            <label for="weight">Peso <strong>*</strong><span>(em quilogramas)</span></label>
+                            <input type="number" id="weight" required>
+                        </div>      
+                    </div>              
+                </div>
+            </fieldset>
+
+            <div class="form-button">
+                <input class="button" type="submit" value="Inscrever-se">
+            </div>
         </form>
-
-        <div id="division"></div>
-        
-        <p>Já possui uma conta? Faça Log In <a href="">aqui</a>.</p>
     </div>
-
+    
     <footer>
+        <p>Já possui uma conta? Faça Log In <a href="../signin/index.html">aqui</a>.</p>
         <p>Fale conosco no Instagram <a href="https://www.instagram.com/pauloviictorss/" target="_blank">@GymHood.io</a></p>
     </footer>
 </body>
