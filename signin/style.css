@@ -235,7 +235,7 @@ strong {
 }
 
 .social-media-container .icon-container:hover {
-    background: #121212;
+    background: #ffae35;
     transition: ease-in 150ms;
     box-shadow: rgba(18, 18, 18, 0.1) 4px 4px;
 }
