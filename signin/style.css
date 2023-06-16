@@ -201,7 +201,8 @@ form {
     background: #ffae35;
     cursor: pointer;
     transition: ease-in 200ms;
-    box-shadow: rgba(18, 18, 18, 0.1) 4px 4px;
+    box-shadow: rgba(18, 18, 18, 0.1) 1px 1px;
+    transform: scale(1.02);
 }
 
 strong {
@@ -237,7 +238,8 @@ strong {
 .social-media-container .icon-container:hover {
     background: #ffae35;
     transition: ease-in 150ms;
-    box-shadow: rgba(18, 18, 18, 0.1) 4px 4px;
+    box-shadow: rgba(18, 18, 18, 0.1) 1px 1px;
+    transform: scale(1.2);
 }
 
 .social-media-container .icon-container svg {

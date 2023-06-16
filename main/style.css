@@ -74,8 +74,8 @@ main {
     padding: 1em 3em;
     border-radius: 20px;
     transition: ease-in-out 600ms;
-    color: white;
-    background: #121212;
+    color: #121212;
+    background: #f1f1f1;
 }
 
 #card1 {
@@ -87,6 +87,7 @@ main {
     transition: ease-in-out 500ms;
     box-shadow: rgba(18, 18, 18, 0.1) 1px 1px;
     color: #121212;
+    transform: scale(1.02);
 }
 
 #wpplogo {
