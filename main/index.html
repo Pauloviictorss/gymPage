@@ -8,25 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container" id="head">
+    <div class="header" id="head">
         <nav>
-            <a href="">
-                <img src="../img/logo.svg" alt="GymHood.io">
-            </a>
+            <img id="logo" src="../img/logo.svg" alt="GymHood.io">
             <ul class="menu">
-                <li><a class="menu-item" href="../main/index.html">Home</a></li>
-                <li><a class="menu-item" href="../signin/index.html">Login</a></li>
-                <li><a class="menu-item" href="../signup/index.html">Cadastro</a></li>
+                <li><a class="menu-item" href="../main/index.html"><strong>Home</strong></a></li>
+                <li><a class="menu-item" href="../signup/index.html">Unidades</a></li>
+                <li><a class="menu-item" href="../signup/index.html">Sobre</a></li>
+                <li><a class="menu-item" href="../signup/index.html">Aulas</a></li>
+                <li><a class="menu-item" href="../signup/index.html"><strong style="color: #FF9900;">Loja</strong></a></li>
+                <li><a class="menu-item" href="../signup/index.html">Matrícula</a></li>
             </ul>
         </nav>
     </div>
 
     <main>
-        <div class="page" id="card1">
+        <div class="page">
             <section class="text">
                 <h1>Treinos <span>exclusivos</span> para você!</h1>
                 <p>Aqui, nós criamos treinos <strong>únicos</strong> e <strong>exclusivos</strong> para você.<br>Invista no seu corpo e tenha muito mais <strong>performance</strong> e <strong>qualidade de vida</strong>.</p>
-                <a id="button" target="_blank" href="https://api.whatsapp.com/send?phone=5561999345014&text=Ol%C3%A1,%20vim%20pela%20sua%20LP%20da%20GymHood.io%20e%20gostaria%20de%20entrar%20em%20contato!">
+                <a class="button" target="_blank" href="https://api.whatsapp.com/send?phone=5561999345014&text=Ol%C3%A1,%20vim%20pela%20sua%20LP%20da%20GymHood.io%20e%20gostaria%20de%20entrar%20em%20contato!">
                     <img id="wpplogo" src="../img/wppLogo.png" alt="Logo do WhatsApp">
                     <p>Faça seu orçamento já!</p>
                 </a>
@@ -34,32 +35,109 @@
             <img id="img-card" src="../img/gym.svg" alt="Mulher em um treino de pilates.">
         </div>
 
-        <div class="page" id="card2">
-            <img id="img-card" src="../img/gymimg.svg" alt="Ilustração de academia.">
+        <div id="bg-dark" class="">
+            <div class="page" id="bg-dark-card">
+                <section class="text">
+                    <h1>Treinos <span>específicos</span>!</h1>
+                    <p>Utilize equipamentos novos e higienizados. O espaço ideal para você que é <strong>iniciante</strong> ou <strong>atleta</strong>. Contamos com professores <strong>qualificados</strong>, para te auxiliar sempre que precisar!</p>
+                </section>
+                <section class="text">
+                    <p>Contamos com ambientes únicos e exclusivos, com equipamentos <strong>atuais</strong> e <strong>tecnológicos</strong>, para que você alcance seu <span>potencial máximo</span> ao treinar conosco!</p>
+                    <h1>Ambientes <span>únicos</span>!</h1>
+                </section>
+            </div>
+        </div>
+
+        <div class="page-modalidades">
             <section class="text">
-                <h1>Ambientes <span>únicos</span>!</h1>
-                <p>Contamos com ambientes únicos e exclusivos, com equipamentos <strong>atuais</strong> e <strong>tecnológicos</strong>, para que você alcance seu <span>potencial máximo</span> ao treinar conosco!</p>
-                <a id="button" target="_self" href="../signin/index.html">    
-                    <p>Treine conosco!</p>
-                </a>
+                <h1>Nossas <span>modalidades</span>!</h1>
+                <div class="modalidades">
+                    <div>
+                        <h1>Jiu Jitsu</h1>
+                        <p>A <strong>GymHood.io</strong> oferece aulas de Jiu Jitsu para <strong>todos os níveis de habilidade</strong>. Com instrutores experientes, os alunos aprendem técnicas de golpes, bloqueios e esquivas, <strong>melhorando força</strong>, resistência e coordenação.</p>
+                        <p><strong>A segurança é prioridade</strong>, com equipamentos de proteção recomendados.</p>
+                    </div>
+                    <img id="img-card" src="../img/jiu.svg" alt="Ilustração de academia.">
+                </div>
+                <div class="modalidades">
+                    <img id="img-card" src="../img/training.svg" alt="Ilustração de academia.">
+                    <div>
+                        <h1>Musculação</h1>
+                        <p>Oferecemos um espaço dedicado à musculação, ideal para aqueles que desejam <strong>aprimorar sua força</strong>, <strong>condicionamento físico</strong> e <strong>desenvolver músculos</strong>.</p>
+                        <p>Se você busca um ambiente inspirador para <strong>alcançar seus resultados de fitness</strong>, aqui é o lugar perfeito para você.</p>
+                    </div>
+                </div>
             </section>
         </div>
 
-        <div class="page" id="card2">
-            <section class="text" id="text3">
-                <h1>Treinos <span>específicos</span>!</h1>
-                <p>Utilize equipamentos novos e higienizados. O espaço ideal para você que é <strong>iniciante</strong> ou <strong>atleta</strong>. Contamos com professores <strong>qualificados</strong>, para te auxiliar sempre que precisar!</p>
-                <a id="button" target="_self" href="../signup/index.html">    
-                    <p>Faça seu cadastro!</p>
-                </a>
-            </section>
-            <img id="img-card" src="../img/training.svg" alt="Ilustração de academia.">
-        </div>     
+        <div id="bg-orange" class="">
+            <div class="page" id="bg-orange-card">
+                <section class="text">
+                    <h1>Conheça nossas <span>unidades</span>!</h1>
+                    <p>A GymHood.io possui <strong>três unidades</strong> estrategicamente localizadas <strong>perto de sua casa:</strong><br>Uma na <strong>Rua das Energias - 123</strong>, outra na <strong>Avenida da Forma Ideal - 456</strong> e na <strong>Rua do Bem-Estar - 789</strong>.</p>
+                    
+                    <p>Agora, você pode desfrutar de treinos sem se preocupar com longas distâncias. Priorize sua forma física e escolha a unidade <strong>mais próxima</strong> para alcançar seus objetivos com facilidade.</p>
+                </section>
+
+                <div class="local">
+                    <div class="local-item">
+                        <h1>Vila Vitalidade</h1>
+                        <img id="" src="../img/local1.svg" alt="Ilustração de academia.">
+                        <p>Rua das Energias, 123</p>
+                    </div>
+                    <div class="local-item">
+                        <h1>Centro Fitness</h1>
+                        <img id="" src="../img/local2.svg" alt="Ilustração de academia.">
+                        <p>Avenida da Forma Ideal, 456</p>
+                    </div>
+                    <div class="local-item">
+                        <h1>Espaço Equilíbrio</h1>
+                        <img id="" src="../img/local3.svg" alt="Ilustração de academia.">
+                        <p>Rua do Bem-Estar, 789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page" class="">
+            <div class="page" id="bg-white-card">
+                <section class="text">
+                    <h1>Por que escolher a <span>gymHood</span>?</h1>
+                    <p>Escolher a GymHood.io é a decisão certa para sua rotina de exercícios. Além de oferecer uma ampla variedade de atividades fitness, estamos convenientemente localizados em uma área de fácil acesso.</p>
+                </section>
+                <section class="text">
+                    <p>Nosso ambiente exclusivo é projetado para proporcionar conforto e motivação, com espaços modernos e equipamentos de última geração. Junte-se a nós e desfrute de uma experiência única, onde alcançar seus objetivos se torna uma jornada empolgante e inspiradora.</p>
+                    <img id="img-card" src="../img/gymimg.svg" alt="Ilustração de academia.">
+                </section>
+            </div>
+        </div>
     </main>
 
-
     <footer>
-        <p>Fale conosco no Instagram <a href="https://www.instagram.com/pauloviictorss/" target="_blank">@GymHood.io</a></p>
+        <div id="foot">
+            <div id="foot-logo">
+                <img id="logo" src="../img/logo.svg" alt="">
+                <p id="foot-instagram">Fale conosco no Instagram <a href="https://www.instagram.com/pauloviictorss/" target="_blank">@GymHood.io</a></p>
+            </div>
+
+            <nav id="foot-nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Unidades</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Aulas</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Matrícula</a></li>
+                    <li><a href="">Loja</a></li>
+                    <li><a href="">Fale conosco</a></li>
+                    <li><a href="">Política de privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
+  
+    <p id="foot-range">Powered by @pauloviictorss</p>            
+
 </body>
 </html>
