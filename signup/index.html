@@ -7,82 +7,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container" id="head">
+    <div class="header" id="head">
         <nav>
-            <a href="">
-                <img src="../img/logo.svg" alt="GymHood.io">
-            </a>
+            <img id="logo" src="../img/logo.svg" alt="GymHood.io">
             <ul class="menu">
-                <li><a class="menu-item" href="../main/index.html">Home</a></li>
-                <li><a class="menu-item" href="../signin/index.html">Login</a></li>
-                <li><a class="menu-item" href="../signup/index.html">Cadastro</a></li>
+                <li><a class="menu-item" href="../main/index.html"><strong>Home</strong></a></li>
+                <li><a class="menu-item">Unidades</a></li>
+                <li><a class="menu-item">Sobre</a></li>
+                <li><a class="menu-item">Aulas</a></li>
+                <li><a class="menu-item"><strong style="color: #FF9900;">Loja</strong></a></li>
+                <li><a class="menu-item" href="">Matrícula</a></li>
             </ul>
         </nav>
     </div>
     
-    <div id="title">
+    <div id="callout">
         <header>
             <h1>Faça parte da nossa <span>comunidade</span> e <span>treine conosco</span>.</h1>
             <p>O primeiro passo, é se <span>cadastrar</span> no nosso site.</p>
         </header>
     </div>
 
-    <div class="container" id="middle">
-        
-        <form>
-            <fieldset>
-                <div class="fieldset-wrapper">
-                    <legend>Dados cadastrais e contato</legend>
+    <form>
+        <fieldset class="form-box">
+            <div class="fieldset-wrapper">
+                <legend>Dados cadastrais e contato</legend>
 
-                    <div class="input-wrapper">
-                        <label for="name">Nome completo <strong>*</strong><span>(mínimo 8 caracteres)</span></label>
-                        <input type="text" id="name" required minlength="8">
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="email">E-mail <strong>*</strong> <span>(exemplo@email.com)</span></label>
-                        <input type="email" id="email" required>
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="password">Senha <strong>*</strong><span>(mínimo 8 caracteres)</span></label>
-                        <input type="password" id="password" required minlength="8">
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="whatsapp">WhatsApp para contato <span>(somente números)</span></label>
-                        <input type="number" id="whatsapp">
-                    </div>                    
+                <div class="input-wrapper">
+                    <label for="name">Nome completo <strong>*</strong><span>(mínimo 8 caracteres)</span></label>
+                    <input type="text" id="name" required minlength="8">
                 </div>
-            </fieldset>
 
-            <fieldset>
-                <div class="fieldset-wrapper">
-                    <legend>Opções de treino</legend>
-
-                    <div class="input-wrapper">
-                        <label for="modality">Modalidade de treino</label>
-                        <select id="modality">
-                            <option value="gym">Musculação</option>
-                            <option value="swim">Natação</option>
-                            <option value="muaythai">Muay Thai</option>
-                            <option value="juijitsu">Jiu Jitsu</option>
-                            <option value="judo">Judô</option>
-                        </select>
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="turn">Turno preferível</label>
-                        <select id="turn">
-                            <option value="morning">Manhã</option>
-                            <option value="afternoon">Tarde</option>
-                            <option value="night">Noite</option>
-                        </select>
-                    </div>  
+                <div class="input-wrapper">
+                    <label for="email">E-mail <strong>*</strong> <span>(exemplo@email.com)</span></label>
+                    <input type="email" id="email" required>
                 </div>
-            </fieldset>
 
-            <fieldset>
+                <div class="input-wrapper">
+                    <label for="password">Senha <strong>*</strong><span>(mínimo 8 caracteres)</span></label>
+                    <input type="password" id="password" required minlength="8">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="whatsapp">WhatsApp para contato <span>(somente números)</span></label>
+                    <input type="number" id="whatsapp">
+                </div>                    
+            </div>
+        </fieldset>
+
+        <fieldset class="form-box">
+            <div class="fieldset-wrapper">
+                <legend>Opções de treino</legend>
+
+                <div class="input-wrapper">
+                    <label for="modality">Modalidade de treino</label>
+                    <select id="modality">
+                        <option value="gym">Musculação</option>
+                        <option value="swim">Natação</option>
+                        <option value="muaythai">Muay Thai</option>
+                        <option value="juijitsu">Jiu Jitsu</option>
+                        <option value="judo">Judô</option>
+                    </select>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="turn">Turno preferível</label>
+                    <select id="turn">
+                        <option value="morning">Manhã</option>
+                        <option value="afternoon">Tarde</option>
+                        <option value="night">Noite</option>
+                    </select>
+                </div>  
+
                 <div class="fieldset-wrapper">
                     <legend>Histórico de atividades</legend>
 
@@ -100,33 +96,64 @@
                             <option value="no">Não</option>
                         </select>
                     </div>
-                    <div class="col-3">
-                        <div class="input-wrapper">
-                            <label for="age">Idade <strong>*</strong></label>
-                            <input type="date" id="age" required>
-                        </div> 
-                        
-                        <div class="input-wrapper">
-                            <label for="height">Altura <strong>*</strong><span>(em centímetros)</span></label>
-                            <input type="number" id="height" required>
-                        </div> 
-    
-                        <div class="input-wrapper">
-                            <label for="weight">Peso <strong>*</strong><span>(em quilogramas)</span></label>
-                            <input type="number" id="weight" required>
-                        </div>      
-                    </div>              
                 </div>
-            </fieldset>
-
-            <div class="form-button">
-                <input class="button" type="submit" value="Inscrever-se">
             </div>
-        </form>
-    </div>
+        </fieldset>
+
+
+
+        <fieldset class="form-box">
+            <div class="fieldset-wrapper">
+                <legend>Informações pessoais</legend>
+                <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="age">Idade <strong>*</strong></label>
+                        <input type="date" id="age" required>
+                    </div> 
+                    
+                    <div class="input-wrapper">
+                        <label for="height">Altura <strong>*</strong><span>(em centímetros)</span></label>
+                        <input type="number" id="height" required>
+                    </div> 
+    
+                </div>      
+                       
+                <div class="input-wrapper">
+                    <label for="weight">Peso <strong>*</strong><span>(em quilogramas)</span></label>
+                    <input type="number" id="weight" required>
+                </div>       
+            </div> 
+        </fieldset>
+
+        <div class="form-button">
+            <input class="button" type="submit" value="Inscrever-se">
+        </div>
+    </form>
     
     <footer>
-        <p>Fale conosco no Instagram <a href="https://www.instagram.com/pauloviictorss/" target="_blank">@GymHood.io</a></p>
+        <div id="foot">
+            <div id="foot-logo">
+                <img id="logo" src="../img/logo.svg" alt="">
+                <p id="foot-instagram">Fale conosco no Instagram <a href="https://www.instagram.com/pauloviictorss/" target="_blank">@GymHood.io</a></p>
+            </div>
+
+            <nav id="foot-nav">
+                <ul>
+                    <li><a href="../main/index.html">Home</a></li>
+                    <li><a>Unidades</a></li>
+                    <li><a>Sobre</a></li>
+                    <li><a>Aulas</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Matrícula</a></li>
+                    <li><a>Loja</a></li>
+                    <li><a>Fale conosco</a></li>
+                    <li><a>Política de privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
+  
+    <p id="foot-range">Powered by @pauloviictorss</p> 
 </body>
 </html>
